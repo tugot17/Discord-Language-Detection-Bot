@@ -1,4 +1,4 @@
-# Discord-Language-Bot
+# Discord-Language-Detection-Bot
 Restrict the use of banned languages on your discord server. 
 Use the language detection model with [hugging face](https://huggingface.co/papluca/xlm-roberta-base-language-detection) 
 to detect the language used by members of your discord channel. 
@@ -27,7 +27,7 @@ The message is sent to the bot (API), and if it contains an unwanted language, t
 <p align="center"> <img src="assets/diagram.png" width="500px"> </p>
 
 The code itself is super simple and should be treated more as a starting point for future modifications. 
-99% of the "business logic" can be found in [on_message](https://github.com/tugot17/Discord-Language-Bot/blob/2ac23d10f428da8d5f71af9a089587e11cce93df/app/main.py#L24)
+99% of the "business logic" can be found in [on_message](https://github.com/tugot17/Discord-Language-Bot/blob/34775d5ea03cfa8e62e9b854d02767b15f302869/app/main.py#L24)
 function.
 
 To make the bot useful you will need a token. [Here](https://www.writebots.com/discord-bot-token/) you can find a step by step tutorial.
@@ -37,7 +37,7 @@ Once you have a working token you need to save it to the `discord_token.txt` fil
 echo "<HERE-YOUR-TOKEN>" > discord_token.txt
 ```
 
-where <HERE-YOUR-TOKEN> is something like: `OTIIzaaTcjY2xOussUy.YbkUkg.Eg.zhsN2ytTud1ClfeHGaTS`
+where `<HERE-YOUR-TOKEN>` is something like: `OTIIzaaTcjY2xOussUy.YbkUkg.Eg.zhsN2ytTud1ClfeHGaTS`
 This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
 
 This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
@@ -80,8 +80,16 @@ message: "Please use English on this server"
 
 **A:** As far as I know, you can't because the acceptable latency to run the lambda will be too high to make it useful, but let me know if you know it's possible, I'd be happy to try running it that way. 
 But services like `Azure Container Instance` or a simple `EC2` machine should work great. 
+
 ##
 
 **Q:** Can I use this repo to harass minorities on my server? 
 
 **A:** No! The license prohibits you from doing that. 
+
+##
+
+**Q:** What are the limitations of the model?
+
+**A:** It might have the problem with short messages, hence the `min_post_char_length` heuristics. It can also perform poorly when presented with laggards it has never seen (ML models tend to perform poorly when presented with data outside the training set distribution).
+
