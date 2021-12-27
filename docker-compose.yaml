@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  langage_model:
+    build: .
+    volumes:
+      - ./config.yaml:/app/config.yaml
+    environment:
+      DISCORD_TOKEN: /run/secrets/discord_token
+    secrets:
+      - discord_token
+    command: python app/main.py
+
+secrets:
+  discord_token:
+    file: discord_token.txt
+
+

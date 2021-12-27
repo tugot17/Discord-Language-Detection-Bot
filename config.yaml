@@ -1,0 +1,5 @@
+min_post_char_length: 15
+
+accepted_languages: [en]
+
+message: "Please use English on this server"
