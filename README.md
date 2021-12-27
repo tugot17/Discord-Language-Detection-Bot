@@ -37,7 +37,7 @@ Once you have a working token you need to save it to the `discord_token.txt` fil
 echo "<HERE-YOUR-TOKEN>" > discord_token.txt
 ```
 
-where <HERE-YOUR-TOKEN> is something like: `OTIIzaaTcjY2xOussUy.YbkUkg.Eg.zhsN2ytTud1ClfeHGaTS`
+where `<HERE-YOUR-TOKEN>` is something like: `OTIIzaaTcjY2xOussUy.YbkUkg.Eg.zhsN2ytTud1ClfeHGaTS`
 This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
 
 This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
