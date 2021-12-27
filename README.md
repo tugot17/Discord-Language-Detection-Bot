@@ -27,7 +27,7 @@ The message is sent to the bot (API), and if it contains an unwanted language, t
 <p align="center"> <img src="assets/diagram.png" width="500px"> </p>
 
 The code itself is super simple and should be treated more as a starting point for future modifications. 
-99% of the "business logic" can be found in [on_message](https://github.com/tugot17/Discord-Language-Bot/blob/2ac23d10f428da8d5f71af9a089587e11cce93df/app/main.py#L24)
+99% of the "business logic" can be found in [on_message](https://github.com/tugot17/Discord-Language-Bot/blob/34775d5ea03cfa8e62e9b854d02767b15f302869/app/main.py#L24)
 function.
 
 To make the bot useful you will need a token. [Here](https://www.writebots.com/discord-bot-token/) you can find a step by step tutorial.
