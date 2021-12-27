@@ -1,4 +1,4 @@
-# Discord-Language-Bot
+# Discord-Language-Detection-Bot
 Restrict the use of banned languages on your discord server. 
 Use the language detection model with [hugging face](https://huggingface.co/papluca/xlm-roberta-base-language-detection) 
 to detect the language used by members of your discord channel. 
