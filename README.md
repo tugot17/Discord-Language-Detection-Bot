@@ -80,8 +80,16 @@ message: "Please use English on this server"
 
 **A:** As far as I know, you can't because the acceptable latency to run the lambda will be too high to make it useful, but let me know if you know it's possible, I'd be happy to try running it that way. 
 But services like `Azure Container Instance` or a simple `EC2` machine should work great. 
+
 ##
 
 **Q:** Can I use this repo to harass minorities on my server? 
 
 **A:** No! The license prohibits you from doing that. 
+
+##
+
+**Q:** What are the limitations of the model?
+
+**A:** It might have the problem with short messages, hence the `min_post_char_length` heuristics. It can also perform poorly when presented with laggards it has never seen (ML models tend to perform poorly when presented with data outside the training set distribution).
+
