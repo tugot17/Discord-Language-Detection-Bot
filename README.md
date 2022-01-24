@@ -38,9 +38,7 @@ echo "<HERE-YOUR-TOKEN>" > discord_token.txt
 ```
 
 where `<HERE-YOUR-TOKEN>` is something like: `OTIIzaaTcjY2xOussUy.YbkUkg.Eg.zhsN2ytTud1ClfeHGaTS`
-This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
-
-This will be used to authorize [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
+This will be used to authorize the [discord client](https://discordpy.readthedocs.io/en/stable/api.html#client).
 
 ```
 docker-compose up
